@@ -9,6 +9,7 @@ var connect = require("./config/db");
 var cors = require("cors");
 
 var PORT = process.env.PORT;
+var nodev = process.env.NODE_VERSION = '14.17.5';
 var app = express();
 app.use(express.json());
 app.use(cors());
